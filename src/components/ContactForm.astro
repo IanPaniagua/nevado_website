@@ -1,0 +1,62 @@
+<!-- Contact form -->
+<div class="mx-auto bg-white p-8 rounded-lg shadow-lg">
+  <form name="contact" method="POST" data-netlify="true">
+    <!-- hidden to netlify -->
+    <input type="hidden" name="form-name" value="contact" />
+
+    <div class="grid gap-6 sm:grid-cols-2">
+      <div>
+        <label for="name" class="block text-sm font-medium text-blue-800"
+          >Nombre</label
+        >
+        <input
+          type="text"
+          name="name"
+          required
+          class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50 pl-1"
+        />
+      </div>
+      <div>
+        <label for="email" class="block text-sm font-medium text-blue-800"
+          >Correo Electrónico</label
+        >
+        <input
+          type="email"
+          name="email"
+          required
+          class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50 pl-1"
+        />
+      </div>
+      <div class="sm:col-span-2">
+        <label for="asunto" class="block text-sm font-medium text-blue-800"
+          >Asunto</label
+        >
+        <input
+          type="text"
+          name="asunto"
+          required
+          class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50 pl-1"
+        />
+      </div>
+      <div class="sm:col-span-2">
+        <label for="message" class="block text-sm font-medium text-blue-800"
+          >Mensaje</label
+        >
+        <textarea
+          name="message"
+          rows="4"
+          required
+          class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50 pl-1"
+        ></textarea>
+      </div>
+    </div>
+    <div class="mt-6">
+      <button
+        type="submit"
+        class="w-full bg-blue-600 text-white py-2 px-4 rounded-md shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+      >
+        Enviar
+      </button>
+    </div>
+  </form>
+</div>

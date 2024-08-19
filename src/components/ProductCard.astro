@@ -1,0 +1,24 @@
+---
+import products from "../mocks/products.json";
+---
+
+{
+  products.map((product) => (
+    <figure class="flex flex-col w-full max-sm:w-full rounded-lg p-4 bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
+      <img
+        src={product.image}
+        alt="image of product"
+        class="w-56 h-56 self-center"
+      />
+      <h3 class="mt-2 text-2xl text-blue-800 leading-normal font-semibold">
+        {product.name}
+      </h3>
+      <span class="mt-1 text-1xl text-blue-600 leading-normal font-semibold">
+        {product.packaging}
+      </span>
+      <p class="mt-2 text-blue-800 text-1xl leading-normal">
+        {product.description}
+      </p>
+    </figure>
+  ))
+}
