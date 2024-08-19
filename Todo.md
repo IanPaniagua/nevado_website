@@ -1,17 +1,26 @@
 #GENERAL
 [x] Header, responsive
-[] Footer, responsive
+[x] Footer, responsive
 
 #SECTIONS
 [x] Section Inicio, responsive
 [x] Section Productos, responsive
-[] Section Conocenos, responsive
-[] Section Contacto, responsive
+[x] Section Conocenos, responsive
+[x] Section Contacto, responsive
 
-#PRODUCTOS
-[] Logo
-[] Imagenes para Productos
-[] BS mock para Productos
+#PRODUCTS
+[x] Logo
+[x] Imagenes para Productos
+[x] BS mock para Productos
 
-#CONTACTO
-[] Formulario Email
+#CONTACT
+[x] Formulario Email
+
+#COMPONENTS
+[x]ProductCard
+[x]ContactInfo
+[x]ContactForm
+
+
+[]Social media icons
+[]Email Connection
