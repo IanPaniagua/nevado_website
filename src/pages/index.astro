@@ -1,0 +1,18 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Inicio from "../sections/Inicio.astro";
+import Productos from "../sections/Productos.astro";
+import Conocenos from "../sections/Conocenos.astro";
+import Contacto from "../sections/Contacto.astro";
+
+const pageTitle = "Inicio";
+---
+
+<BaseLayout pageTitle={""}>
+  <main class="">
+    <Inicio />
+    <Productos />
+    <Conocenos />
+    <Contacto />
+  </main>
+</BaseLayout>

@@ -1,0 +1,153 @@
+---
+const id = "contacto";
+---
+
+<section id={id} class="w-full bg-blue-50">
+  <div class="bg-blue-50 rounded-lg py-10">
+    <h1
+      class="text-center text-blue-800 text-6xl sm:text-[48px] sm:leading-[58px] max-sm:text-[36px] max-sm:leading-[46px] py-2"
+    >
+      CONTACTO
+    </h1>
+
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 mt-10">
+      <!-- Formulario de contacto -->
+      <div class="mx-auto bg-white p-8 rounded-lg shadow-lg">
+        <form action="/enviar-formulario" method="POST">
+          <div class="grid gap-6 sm:grid-cols-2">
+            <div>
+              <label
+                for="nombre"
+                class="block text-sm font-medium text-blue-800">Nombre</label
+              >
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                required
+                class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50 pl-1"
+              />
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium text-blue-800"
+                >Correo Electrónico</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50 pl-1"
+              />
+            </div>
+            <div class="sm:col-span-2">
+              <label
+                for="asunto"
+                class="block text-sm font-medium text-blue-800">Asunto</label
+              >
+              <input
+                type="text"
+                id="asunto"
+                name="asunto"
+                required
+                class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50 pl-1"
+              />
+            </div>
+            <div class="sm:col-span-2">
+              <label
+                for="mensaje"
+                class="block text-sm font-medium text-blue-800">Mensaje</label
+              >
+              <textarea
+                id="mensaje"
+                name="mensaje"
+                rows="4"
+                required
+                class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50 pl-1"
+              ></textarea>
+            </div>
+          </div>
+          <div class="mt-6">
+            <button
+              type="submit"
+              class="w-full bg-blue-600 text-white py-2 px-4 rounded-md shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+            >
+              Enviar
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Información de contacto -->
+      <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Tarjeta de Correo Electrónico -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center text-center"
+        >
+          <svg
+            class="w-12 h-12 text-blue-800 mb-4"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 8l9 6 9-6M4 6h16a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V7a1 1 0 011-1z"
+            ></path>
+          </svg>
+          <h3 class="text-xl font-semibold text-blue-800 mb-2">
+            Correo Electrónico
+          </h3>
+          <p class="text-blue-600">contacto@nevado.com</p>
+        </div>
+
+        <!-- Tarjeta de Dirección -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center text-center"
+        >
+          <svg
+            class="w-12 h-12 text-blue-800 mb-4"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M5.121 9.45A4.48 4.48 0 017.5 7c.55 0 1.074.153 1.533.424.46-.27.983-.424 1.533-.424 1.573 0 2.9 1.42 2.9 3.2 0 .69-.126 1.392-.351 2.065-.284.723-.678 1.387-1.14 1.98l-2.347 2.91a.5.5 0 01-.778 0l-2.347-2.91a4.14 4.14 0 01-1.14-1.98A4.7 4.7 0 015.121 9.45z"
+            ></path>
+          </svg>
+          <h3 class="text-xl font-semibold text-blue-800 mb-2">Dirección</h3>
+          <p class="text-blue-600">123 Calle Principal, Ciudad, País</p>
+        </div>
+
+        <!-- Tarjeta de Teléfono -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center text-center"
+        >
+          <svg
+            class="w-12 h-12 text-blue-800 mb-4"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M7 0h10a2 2 0 012 2v20a2 2 0 01-2 2H7a2 2 0 01-2-2V2a2 2 0 012-2z"
+            ></path>
+          </svg>
+          <h3 class="text-xl font-semibold text-blue-800 mb-2">Teléfono</h3>
+          <p class="text-blue-600">+123 456 7890</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
