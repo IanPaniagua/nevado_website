@@ -4,14 +4,8 @@ const id = "inicio";
 
 <section
   id={id}
-  class="w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container border-black"
-  style="
-  background-image: url('/fabrica.webp');
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-"
+  class="w-full flex xl:flex-row flex-col justify-center min-h-screen max-container bg-cover bg-center bg-no-repeat"
+  style="background-image: url('/fabrica2.webp');"
 >
   <div
     class="relative xl:w-2/5 flex flex-col justify-center items-center w-full p-6 pt-28"
@@ -31,3 +25,13 @@ const id = "inicio";
     </div>
   </div>
 </section>
+<style>
+  /* Media query para dispositivos móviles */
+  @media (max-width: 768px) {
+    #inicio {
+      background-size: cover;
+      background-position: top center;
+      background-attachment: none;
+    }
+  }
+</style>
