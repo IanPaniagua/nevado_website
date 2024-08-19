@@ -2,7 +2,7 @@
 import Navigation from "./Navigation.astro";
 ---
 
-<header class="fixed top-0 left-0 w-full bg-blue-800 p-6 z-50">
+<header class="fixed top-0 left-0 w-full bg-blue-800 z-50">
   <nav
     class="container mx-auto flex items-center justify-between flex-wrap p-6"
   >
@@ -37,7 +37,7 @@ import Navigation from "./Navigation.astro";
   document.addEventListener("DOMContentLoaded", () => {
     const navToggle = document.getElementById("nav-toggle");
     const navMenu = document.getElementById("nav-menu");
-    const headerHeight = 129; // Fixed header height
+    const headerHeight = 80; // Fixed header height
 
     // Toggle menu visibility on button click
     navToggle.addEventListener("click", () => {
