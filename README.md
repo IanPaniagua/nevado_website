@@ -1,5 +1,5 @@
 # Astro Starter Kit: Minimal
-
+testing new Github
 ```sh
 npm create astro@latest -- --template minimal
 ```
