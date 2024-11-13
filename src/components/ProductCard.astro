@@ -19,6 +19,14 @@ import products from "../mocks/products.json";
       <p class="mt-2 text-blue-800 text-1xl leading-normal">
         {product.description}
       </p>
+      <!-- Botón para mostrar más detalles -->
+      <button
+        onclick={`toggleDetails('${product.name}')`}
+        class="mt-4 px-3 py-2  text-blue-800 text-sm rounded-md hover:bg-blue-700 hover:text-white transition"
+      >
+        Ver detalles
+      </button>
+      
     </figure>
   ))
 }
