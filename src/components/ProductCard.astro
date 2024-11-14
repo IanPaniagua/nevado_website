@@ -19,14 +19,38 @@ import products from "../mocks/products.json";
       <p class="mt-2 text-blue-800 text-1xl leading-normal">
         {product.description}
       </p>
-      <!-- Botón para mostrar más detalles -->
-      <button
+      {/* <!-- Botón para mostrar más detalles --> */}
+      {/* <button
         onclick={`toggleDetails('${product.name}')`}
         class="mt-4 px-3 py-2  text-blue-800 text-sm rounded-md hover:bg-blue-700 hover:text-white transition"
       >
         Ver detalles
-      </button>
-      
+      </button> */}
+      <span class="mt-1 text-1xl text-blue-600 leading-normal font-semibold">Aplicación</span>
+      <p class="mt-2 text-blue-800 text-1xl leading-normal">
+        {product.application}
+      </p>  
+      <span class="mt-1 text-1xl text-blue-600 leading-normal font-semibold">Especificaciones</span>
+      <p class="mt-2 text-blue-800 text-1xl leading-normal">
+    {/* <!-- Mostrar especificaciones --> */}
+    <span class="font-semibold">Carbonato de Calcio: </span>
+    <span>{product.specifications.calcium_carbonate.range}%</span>
+    <br />
+
+  </p>
+
+  {/* <!-- Especificaciones Físicas --> */}
+  <div class="mt-4">
+    <span class="mt-1 text-1xl text-blue-600 leading-normal font-semibold">Especificaciones Físicas</span>
+    <ul class="mt-2 text-blue-800 text-1xl leading-normal list-disc ml-5">
+      {product.specifications.physical_specifications.map((spec, index) => (
+        <li key={index}>
+          <span class="font-semibold">{spec.description}: </span> {spec.range || spec.maximum} {spec.unit}
+        </li>
+      ))}
+    </ul>
+  </div>
+</div>
     </figure>
   ))
 }
