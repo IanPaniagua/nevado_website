@@ -1,3 +1,6 @@
+---
+import companyInfo from "../mocks/company.json";
+---
 <!-- Contact Information -->
 <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
   <!-- Email Card-->
@@ -19,7 +22,7 @@
       ></path>
     </svg>
     <h3 class="text-xl font-semibold text-blue-800 mb-2">Correo Electrónico</h3>
-    <p class="text-blue-600">contacto@nevado.com</p>
+    <p class="text-blue-600">{companyInfo.company.email}</p>
   </div>
 
   <!-- Location Card-->
@@ -41,7 +44,7 @@
       ></path>
     </svg>
     <h3 class="text-xl font-semibold text-blue-800 mb-2">Dirección</h3>
-    <p class="text-blue-600">123 Calle Principal, Ciudad, País</p>
+    <p class="text-blue-600">{companyInfo.company.address}</p>
   </div>
 
   <!-- Phone Card -->
@@ -63,6 +66,6 @@
       ></path>
     </svg>
     <h3 class="text-xl font-semibold text-blue-800 mb-2">Teléfono</h3>
-    <p class="text-blue-600">+123 456 7890</p>
+    <p class="text-blue-600">{companyInfo.company.phone}</p>
   </div>
 </div>
